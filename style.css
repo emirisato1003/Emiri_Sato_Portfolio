@@ -455,14 +455,14 @@ section{
     }
 
     .header.active{
-        padding-top: 7rem;
+        /* padding-top: 7rem; */
     }
 
     #menu-btn.fa-times{
         right:0;
     }
 
-    .home .image img{
+    .home img{
         height: auto;
         width: auto;
     }
@@ -498,7 +498,7 @@ section{
         right:0;
     }
 
-    .home .image img{
+    .home img{
         height: auto;
         width: auto;
     }
@@ -512,7 +512,7 @@ section{
     }
 
     .about .skills ul li img{
-        height: 100px;
+        height: 70px;
     }
 
     .contact form .flex .box{
