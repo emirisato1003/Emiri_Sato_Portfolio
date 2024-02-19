@@ -612,8 +612,9 @@ section{
     }
 
     .home img{
+        max-width: 300px;
         height: auto;
-        width: auto;
+        width: 100%;
     }
     
     .heading span{
