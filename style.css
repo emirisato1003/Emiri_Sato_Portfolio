@@ -50,7 +50,7 @@ body.active{
 }
 
 section{
-    padding: 3.5rem 2rem;
+    padding: 3.5rem 5rem;
     margin: 0 auto;
     max-width: 1200px;
     text-align: center;
@@ -234,7 +234,7 @@ section{
 
 .about .skills ul li{
     display: inline;
-    margin: 2.5rem;
+    margin: 1.5rem;
 }
 
 .about .skills ul li img{
@@ -451,6 +451,10 @@ section{
         padding-left: 7;
     }
 
+    .home .content {
+        padding: 4rem;
+    }
+
     .about .skills ul li img{
         height: 100px;
     }
@@ -475,7 +479,7 @@ section{
 
 }
 
-@media(max-width:672px){
+@media(max-width:650px){
 
     html{
         font-size: 50%;
@@ -484,17 +488,31 @@ section{
         padding-left: 0;
     }
 
+    .home img{
+        height: auto;
+        width: auto;
+    }
+
     .header.active{
         padding-top: 1.5rem;
     }
 
     .header{
         position: relative;
+        top:0; left: 0;
         height: auto;
         background-color: var(--white);
         border-right: var(--border-bold);
         width: 100%;
-    }   
+        padding: 3rem 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-flow: column;
+        transition: .2 liner !important;
+        text-align: center;
+        }
     
     .header .logo{
         font-size: 3rem;
@@ -507,17 +525,21 @@ section{
     }
 
     .header nav.navbar{
-        padding: 2rem 2rem ;
+        padding: 3rem 0 ;
     }
 
     .header div.follow{
         padding: 1rem 1rem;
         margin-bottom: -2.5rem;
     }
-    
+
+    .header .follow a{
+        font-size: 2.5rem;
+    }
+
     #menu-btn.fa-times{
         display: none;
-    }
+    } 
 
     .home img{
         height: auto;
