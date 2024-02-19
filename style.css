@@ -441,6 +441,11 @@ section{
 
 
 
+
+
+
+
+
 /* media queries */
 
 @media (max-width:991px){
@@ -537,7 +542,7 @@ section{
         font-size: 2.5rem;
     }
 
-    #menu-btn.fa-times{
+    #menu-btn{
         display: none;
     } 
 
@@ -598,9 +603,8 @@ section{
         font-size: 2.5rem;
     }
 
-
     #menu-btn{
-        display: none;
+        display: none !important; 
     }
 
     .home img{
