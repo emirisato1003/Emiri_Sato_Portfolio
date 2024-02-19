@@ -162,7 +162,6 @@ section{
 }
 
 .home .image img{
-    height: 65rem;
     padding: 2rem;
     border: var(--border-light);
 }
@@ -614,7 +613,73 @@ section{
     .home img{
         max-width: 300px;
         height: auto;
+        width: auto;
+    }
+    
+    .heading span{
+        font-size: 4.5rem;
+    }
+
+    .about .biography .bio h3{
+        font-size: 2rem;
+    }
+
+    .about .skills ul li img{
+        height: 70px;
+    }
+
+    .contact form .flex .box{
         width: 100%;
+    }
+}
+
+
+@media(max-width:350px){
+
+    html{
+        font-size: 40%;
+    }
+
+    body.active{
+        padding-left: 0;
+    }
+
+    .header.active{
+        padding-top: 5rem;
+    }
+
+    .header{
+    position: relative;
+    top:0; left: 0;
+    height: auto;
+    background-color: var(--white);
+    border-right: var(--border-bold);
+    width: 100%;
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-flow: column;
+    transition: .2 liner !important;
+    text-align: center;
+    }   
+
+    .header .logo{
+        font-size: 3.5rem;
+    }
+
+    .header .navbar a{
+        font-size: 2.5rem;
+    }
+
+    #menu-btn{
+        display: none !important; 
+    }
+
+    .home img{
+        height: 300px;
+        width: auto;
     }
     
     .heading span{
