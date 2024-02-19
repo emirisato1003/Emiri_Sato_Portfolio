@@ -24,7 +24,7 @@
 
 *::-webkit-scrollbar{
     height: .5rem;
-    /* width: 1rem; */
+    width: 1rem;
 }
 
 *::-webkit-scrollbar-track{
@@ -125,7 +125,7 @@ section{
 
 .header .navbar a.active,
 .header .navbar a:hover{
-    background-color: var(--yellow);
+    text-decoration: underline var(--border-bold);
 }
 
 .header .follow a{
@@ -452,122 +452,21 @@ section{
     }
 }
 
-/* @media (max-width:990px){
+@media (max-width:790px){
     html{
         font-size: 50%;
     }
-    body.active{
-        padding-left: 0;
-    }
-
-    #menu-btn{
-        display: none;
-        top: 0; right: 0;
-        height: 0;
-        line-height: 0;
-        width:0;
-        font-size:0;
-        background-color: var(--black);
-        color: var(--white);
-        cursor: pointer;
-    }
-    
-    /* .header{
-        position: fixed;
-        top:0; left: -35rem;
-        height:100vh;
-        background-color: var(--white);
-        border-right: var(--border-bold);
-        width: 35rem;
-        padding: 3rem 2rem;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-flow: column;
-        transition: .2 liner !important;
-        text-align: center;
-        text-transform: capitalize;
-    }
-
 
     .header{
-        position: relative;
-        top:0; left: 0;
-        height: auto;
-        background-color: var(--white);
-        border-right: var(--border-bold);
-        width: 100%;
-        padding: 3rem 2rem;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        flex-flow: row;
-        transition: .2 liner !important;
-        text-align: center;
-        }   
-    
+        top: 0; left: -25rem;
+        width: 25rem;
+    }
+
     .header .logo{
         font-size: 3.5rem;
     }
-
-    .header .navbar a{
-        display: inline;
-        font-size: 2.5rem;
-    }  
-    
-    .header .follow a{
-        padding: 0 .5rem;
-    }
-
-    .about .skills ul li img{
-        height: 100px;
-    }
-} */
-
-@media(max-width:740px){
-
-    html{
-        font-size: 50%;
-    }
     body.active{
-        padding-left: 7;
-    }
-
-    #menu-btn{
-        display: none;
-    }
-
-    .header{
-        position: relative;
-        top:0; left: 0;
-        height: auto;
-        background-color: var(--white);
-        border-right: var(--border-bold);
-        width: 100%;
-        padding: 3rem 2rem;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        flex-flow: row;
-        transition: .2 liner !important;
-        text-align: center;
-        }   
-    
-    .header .logo{
-        font-size: 3.5rem;
-    }
-
-    .header .navbar a{
-        display: inline;
-        font-size: 2.5rem;
-    }  
-    
-
-    .about .skills ul li img{
-        height: 100px;
+        padding-left: 25rem;
     }
 }
 
@@ -576,39 +475,42 @@ section{
     html{
         font-size: 50%;
     }
+    body.active{
+        padding-left: 0;
+    }
 
     .header.active{
-        padding-top: 7rem;
+        padding-top: 1.5rem;
     }
 
     .header{
         position: relative;
-        top:0; left: 0;
         height: auto;
         background-color: var(--white);
         border-right: var(--border-bold);
         width: 100%;
-        padding: 3rem 2rem;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        flex-flow: column;
-        transition: .2 liner !important;
-        text-align: center;
-        }   
+    }   
     
     .header .logo{
-        font-size: 3.5rem;
+        font-size: 3rem;
+        padding: 0;
     }
 
     .header .navbar a{
-        display: block;
+        display: inline;
         font-size: 2.5rem;
     }
 
+    .header nav.navbar{
+        padding: 2rem 2rem ;
+    }
+
+    .header div.follow{
+        padding: 1rem 1rem;
+        margin-bottom: -2.5rem;
+    }
     #menu-btn.fa-times{
-        right:0;
+        display: none;
     }
 
     .home img{
@@ -671,14 +573,6 @@ section{
 
     #menu-btn{
         display: none;
-        top: 0; right: 0;
-        height: 0;
-        line-height: 0;
-        width:0;
-        font-size:0;
-        background-color: var(--black);
-        color: var(--white);
-        cursor: pointer;
     }
 
     .home img{
