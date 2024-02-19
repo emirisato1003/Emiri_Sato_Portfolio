@@ -247,6 +247,7 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
     align-items: flex-start;
+    margin: 3rem;
 }
 
 .project .box-container .box img{
@@ -284,6 +285,7 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2.0;
     align-items: flex-start;
+    margin: 3rem;
 }
 
 .services .box-container .box{
@@ -323,6 +325,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    margin: 3rem;
 }
 
 .education_experience .edu-exp .row .box-container{
@@ -447,6 +450,7 @@ section{
     body.active{
         padding-left: 7;
     }
+
     .about .skills ul li img{
         height: 100px;
     }
@@ -468,6 +472,7 @@ section{
     body.active{
         padding-left: 25rem;
     }
+
 }
 
 @media(max-width:672px){
