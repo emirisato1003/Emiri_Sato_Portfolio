@@ -87,8 +87,6 @@ section{
     color:  var(--black);
 }
 
-
-
 .header{
     position: fixed;
     top:0; left: -35rem;
@@ -176,7 +174,7 @@ section{
 .home .content h3{
     text-transform: uppercase;
     font-size: 5rem;
-    /* margin-bottom: .5rem; */
+    margin-bottom: .5rem;
 }
 
 .home .content span{
