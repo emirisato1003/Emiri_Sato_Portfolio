@@ -558,6 +558,10 @@ section{
         font-size: 40%;
     }  
 
+    section{
+        padding: 3.5rem 2rem;
+    }
+
     .home img{
         max-width: 300px;
         height: auto;
@@ -570,6 +574,10 @@ section{
 
     .about .skills ul li img{
         height: 70px;
+    }
+
+    .project .box-container {
+        margin: 2.5rem;
     }
 
     /* .contact form .flex .box{
@@ -591,6 +599,10 @@ section{
 
     .about .skills ul li img{
         height: 60px;
+    }
+
+    section {
+        padding: 3.5rem 4rem;
     }
 
     /* .contact form .flex .box{
