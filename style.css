@@ -485,20 +485,13 @@ section{
 
 @media(max-width:650px){
 
-    html{
-        font-size: 50%;
-    }
     body.active{
         padding-left: 0;
     }
 
     .home img{
-        height: auto;
+        height: 500px;
         width: auto;
-    }
-
-    .header.active{
-        padding-top: 1.5rem;
     }
 
     .header{
@@ -544,11 +537,6 @@ section{
     #menu-btn{
         display: none;
     } 
-
-    .home img{
-        height: auto;
-        width: auto;
-    }
     
     .heading span{
         font-size: 4.5rem;
@@ -571,36 +559,7 @@ section{
 
     html{
         font-size: 40%;
-    }
-
-    body.active{
-        padding-left: 0;
-    }
-
-    .header.active{
-        padding-top: 5rem;
-    }
-
-    .header{
-    position: relative;
-    top:0; left: 0;
-    height: auto;
-    background-color: var(--white);
-    border-right: var(--border-bold);
-    width: 100%;
-    padding: 3rem 2rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-flow: column;
-    transition: .2 liner !important;
-    text-align: center;
-    }   
-
-    .header .logo{
-        font-size: 3.5rem;
-    }
+    }  
 
     .header .navbar a{
         font-size: 2.5rem;
@@ -643,27 +602,6 @@ section{
     body.active{
         padding-left: 0;
     }
-
-    .header.active{
-        padding-top: 5rem;
-    }
-
-    .header{
-    position: relative;
-    top:0; left: 0;
-    height: auto;
-    background-color: var(--white);
-    border-right: var(--border-bold);
-    width: 100%;
-    padding: 3rem 2rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-flow: column;
-    transition: .2 liner !important;
-    text-align: center;
-    }   
 
     .header .logo{
         font-size: 3.5rem;
