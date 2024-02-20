@@ -166,6 +166,12 @@ section{
     border: var(--border-light);
 }
 
+.home img{
+    max-width: 500px;
+    height: auto;
+    width: auto;
+}
+
 .home .content{
     flex: 1 1 40rem;
     padding: 1rem;
@@ -448,17 +454,6 @@ section{
 /* media queries */
 
 @media (max-width:991px){
-    html{
-        font-size: 50%;
-    }
-    body.active{
-        padding-left: 7;
-    }
-
-    .home .content {
-        padding: 4rem;
-    }
-
     .about .skills ul li img{
         height: 100px;
     }
@@ -469,6 +464,10 @@ section{
         font-size: 50%;
     }
 
+    body.active{
+        padding-left: 25rem;
+    }
+
     .header{
         top: 0; left: -25rem;
         width: 25rem;
@@ -477,8 +476,11 @@ section{
     .header .logo{
         font-size: 3.5rem;
     }
-    body.active{
-        padding-left: 25rem;
+    
+
+    .home img{
+        height: 500px;
+        width: auto;
     }
 
 }
@@ -487,11 +489,6 @@ section{
 
     body.active{
         padding-left: 0;
-    }
-
-    .home img{
-        height: 500px;
-        width: auto;
     }
 
     .header{
@@ -555,19 +552,11 @@ section{
     }
 }
 
-@media(max-width:430px){
+@media(max-width:450px){
 
     html{
         font-size: 40%;
     }  
-
-    .header .navbar a{
-        font-size: 2.5rem;
-    }
-
-    #menu-btn{
-        display: none !important; 
-    }
 
     .home img{
         max-width: 300px;
@@ -576,63 +565,35 @@ section{
     }
     
     .heading span{
-        font-size: 4.5rem;
-    }
-
-    .about .biography .bio h3{
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 
     .about .skills ul li img{
         height: 70px;
     }
 
-    .contact form .flex .box{
+    /* .contact form .flex .box{
         width: 100%;
-    }
+    } */
 }
 
 
 @media(max-width:350px){
 
     html{
-        font-size: 40%;
+        font-size: 30%;
     }
-
-    body.active{
-        padding-left: 0;
-    }
-
-    .header .logo{
-        font-size: 3.5rem;
-    }
-
-    .header .navbar a{
-        font-size: 2.5rem;
-    }
-
-    #menu-btn{
-        display: none !important; 
-    }
-
+    
     .home img{
         height: 300px;
         width: auto;
     }
-    
-    .heading span{
-        font-size: 4.5rem;
-    }
-
-    .about .biography .bio h3{
-        font-size: 2rem;
-    }
 
     .about .skills ul li img{
-        height: 70px;
+        height: 60px;
     }
 
-    .contact form .flex .box{
+    /* .contact form .flex .box{
         width: 100%;
-    }
+    } */
 }
