@@ -589,7 +589,7 @@ section{
 @media(max-width:350px){
 
     html{
-        font-size: 30%;
+        font-size: 35%;
     }
     
     .home img{
@@ -602,7 +602,15 @@ section{
     }
 
     section {
-        padding: 3.5rem 4rem;
+        padding: 2rem 4rem;
+    }
+
+    .services .box-container{
+        margin: 0;
+    }
+
+    .education_experience .edu-exp .row {
+        margin: 0;
     }
 
     /* .contact form .flex .box{
