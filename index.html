@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>EmiriSato</title>
 </head>
@@ -25,6 +25,7 @@
         <a href="#home" class="logo">Portfolio.</a>
 
         <nav class="navbar">
+            <a href="index.html">Home</a>
             <a href="file/emirisato_resume.pdf">resume</a>
             <a href="#project">projects</a>
             <a href="#contact">contact</a>
@@ -44,10 +45,10 @@
             <img src="img/profile_image.jpg" alt="Emiri's profile picture">
         </div>
         <div class="content">
-            <h3>hi, i am emiri sato</h3>
+            <h3>hi, i am <a href="#about">emiri sato</a></h3>
             <span>full stack web developer</span>
             <p style="color: #c76356;">Thank you for visiting my Web site! <br> Please take the opportunity to explore and learn more about me.</p>
-            <a href="#about" class="btn">about me</a>
+            <a href="/file/emirisato_resume.pdf" class="btn"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;resume</a>
         </div>
     </section>
     <!-- home section ends  -->
@@ -83,53 +84,71 @@
 
         <div class="biography">
             <p data-aos="fade-up">I enjoy creating websites that are easy and pleasant to use. I have skills in front-end and back-end programming to make smooth web solutions. I can take a project from first ideas to final website. I am eager to use my web development skills on a team to build useful new websites.</p>
+            <div class="services">
+                <span data-aos="fade-up">What I can contribute</span>
+                <div class="box-container">
+                    <div class="box" data-aos="zoom-in">
+                        <div class="contents">
+                            <h3>web development</h3>
+                            <div class="logo">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <p>I specialize in creating websites that seamlessly integrate front-end and back-end development skills. Committed to continuous learning, I ensure that your website is built using the latest technologies, trends, and best practices, providing you with a modern and competitive online presence. </p>
+                        </div>
+                    </div>
 
-        </div>
-        <a href="file/emirisato_resume.pdf" class="btn" data-aos="fade-up">
-            <i class="fas fa-file-alt"></i>&nbsp;&nbsp;Resume
-        </a>
-        </div>
+                    <div class="box" data-aos="zoom-in">
+                        <div class="contents">
+                            <h3>Web Design</h3>
+                            <div class="logo">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <p>Delivering visually captivating and highly effective designs, I prioritize optimizing websites for seamless viewing across various devices and screen sizes. My focus is on creating layouts that are both consistent and user-friendly, ensuring an exceptional experience for every visitor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- skills starts -->
+            <!-- skills starts -->
 
-        <div class="skills" data-aos="fade-up">
-            <h1 class="heading"> <span>skills</span> </h1>
-            <ul class="language">
-                <li class="icon">
-                    <img src="icons/html-5.png" alt="HTML">
-                </li>
-                <li class="icon">
-                    <img src="icons/css-3.png" alt="CSS">
-                </li>
-                <li class="icon">
-                    <img src="icons/js.png" alt="JavaScript">
-                </li>
-                <li class="icon">
-                    <img src="icons/python.png" alt="Python">
-                </li>
-                <li class="icon">
-                    <img src="icons/php.png" alt="PHP">
-                </li>
-                <li class="icon">
-                    <img src="icons/sql-server.png" alt="SQL">
-                </li>
-                <li class="icon">
-                    <img src="icons/sass.png" alt="Sass">
-                </li>
-                <li class="icon">
-                    <img src="icons/git.png" alt="Git">
-                </li>
-                <li class="icon">
-                    <img src="icons/photoshop.png" alt="Photoshop Adobe">
-                </li>
-                <li class="icon">
-                    <img src="icons/bootstrap.png" alt="Bootstrap">
-                </li>
-                <li class="icon"> <img src="icons/wordpress.png" alt="WordPress">
-                </li>
-            </ul>
-        </div>
-        <!-- skills ends -->
+            <div class="skills" data-aos="fade-up">
+                <h1 class="heading"> <span>skills</span> </h1>
+                <ul class="language">
+                    <li class="icon">
+                        <img src="icons/html-5.png" alt="HTML">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/css-3.png" alt="CSS">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/js.png" alt="JavaScript">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/python.png" alt="Python">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/php.png" alt="PHP">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/sql-server.png" alt="SQL">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/sass.png" alt="Sass">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/git.png" alt="Git">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/photoshop.png" alt="Photoshop Adobe">
+                    </li>
+                    <li class="icon">
+                        <img src="icons/bootstrap.png" alt="Bootstrap">
+                    </li>
+                    <li class="icon"> <img src="icons/wordpress.png" alt="WordPress">
+                    </li>
+                </ul>
+            </div>
+            <!-- skills ends -->
     </section>
     <!-- about section ends -->
 
@@ -138,83 +157,106 @@
         <h1 class="heading" data-aos="fade-up"> <span>projects</span></h1>
 
         <div class="box-container">
+
             <div class="box" data-aos="zoom-in">
-                <a href="project.php"><img src="img/nyt_project.png" alt="New York Times News Article Project"></a>
-                <h3>New York Times News Article</h3>
-                <span>HTML | CSS | JavaScript | Bootstrap</span>
+                <img src="img/nyt_project.png" alt="New York Times News Article Project">
+                <a href="project.html">
+                    <div class="overlay">
+                        <h3>New York Times News Article</h3>
+                        <span>HTML | CSS | JavaScript | Bootstrap</span>
+                    </div>
+                </a>
             </div>
 
             <div class="box" data-aos="zoom-in">
-                <a href="project.php"><img src="img/form_project_logo.png" alt="Form order Project"></a>
-                <h3>Order Form Project</h3>
-                <span>HTML | CSS | JavaScript | Bootstrap</span>
-
+                <img src="img/form_project_logo.png" alt="Form order Project">
+                <a href="project.php">
+                    <div class="overlay">
+                        <h3>Order Form Project</h3>
+                        <span>HTML | CSS | JavaScript | Bootstrap</span>
+                    </div>
+                </a>
             </div>
 
 
             <div class="box" data-aos="zoom-in">
-                <a href="project.php"><img src="img/weather_forcast_project.png" alt="Weather Forecast project"></a>
-                <h3>Weather Forecast Project</h3>
-                <span>HTML | CSS | JavaScript | Bootstrap</span>
+                <img src="img/weather_forcast_project.png" alt="Weather Forecast project">
+                <a href="project.php">
+                    <div class="overlay">
+                        <h3>Weather Forecast</h3>
+                        <span>HTML | CSS | JavaScript | Bootstrap</span>
+                    </div>
+                </a>
             </div>
 
             <div class="box" data-aos="zoom-in">
-                <a href="project.php"><img src="img/blog_project_blogpage.png" alt="Blog"></a>
-                <h3>Blog</h3>
-                <span>HTML | CSS | PHP | Bootstrap</span>
+                <img src="img/blog_project_blogpage.png" alt="Blog">
+                <a href="project.html">
+                    <div class="overlay">
+                        <h3>Blog</h3>
+                        <span>HTML | CSS | PHP | Bootstrap</span>
+                    </div>
+                </a>
             </div>
 
             <div class="box" data-aos="zoom-in">
-                <a href="project.php"><img src="img/imgage_gallery_project.png" alt="Image Gallery"></a>
-                <h3>Image Gallery</h3>
-                <span>HTML | CSS | PHP | Bootstrap</span>
+                <img src="img/imgage_gallery_project.png" alt="Image Gallery">
+                <a href="project.html">
+                    <div class="overlay">
+                        <h3>Image Gallery</h3>
+                        <span>HTML | CSS | PHP | Bootstrap</span>
+                    </div>
+                </a>
             </div>
 
             <div class="box" data-aos="zoom-in">
-                <a href="project.php"><img src="https://imgs.search.brave.com/M2v57mAxFDQqRKTAwyORr4-art3Vx1i9O3pNknQxEUk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcm9k/LWRpc2NvdmVyeS5l/ZHgtY2RuLm9yZy9t/ZWRpYS9jb3Vyc2Uv/aW1hZ2UvOGY4ZTUx/MjQtMWRhYi00N2U2/LThmYTYtM2ZiZGMw/NzM4ZjBhLTQ5Nzhh/ZDkzYjFjMy5zbWFs/bC5wbmc" alt="Django Projects"></a>
-                <h3>Projects from CS50's Web Programming with Python and JavaScript</h3>
-                <span>HTML | CSS | Python | Django | Bootstrap</span>
+                <img src="https://imgs.search.brave.com/M2v57mAxFDQqRKTAwyORr4-art3Vx1i9O3pNknQxEUk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcm9k/LWRpc2NvdmVyeS5l/ZHgtY2RuLm9yZy9t/ZWRpYS9jb3Vyc2Uv/aW1hZ2UvOGY4ZTUx/MjQtMWRhYi00N2U2/LThmYTYtM2ZiZGMw/NzM4ZjBhLTQ5Nzhh/ZDkzYjFjMy5zbWFs/bC5wbmc" alt="Django Projects">
+                <a href="project.html">
+                    <div class="overlay">
+                        <h3>Harvard Web CS50</h3>
+                        <span>HTML | CSS | Python | Django | Bootstrap</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
     <!-- project section ends -->
 
     <!-- services section starts -->
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
         <h1 class="heading" data-aos="fade-up"><span>services</span></h1>
-
         <div class="box-container">
             <div class="box" data-aos="zoom-in">
-                <div class="logo">
-                    <i class="fas fa-code"></i>
-                </div>
                 <div class="contents">
+                    <div class="logo">
+                        <i class="fas fa-code"></i>
+                    </div>
                     <h3>web development</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, commodi!</p>
+                    <p>I specialize in creating websites that seamlessly integrate front-end and back-end development skills. Committed to continuous learning, I ensure that your website is built using the latest technologies, trends, and best practices, providing you with a modern and competitive online presence. </p>
                 </div>
             </div>
 
             <div class="box" data-aos="zoom-in">
-                <div class="logo">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
                 <div class="contents">
+                    <div class="logo">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
                     <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorem.</p>
+                    <p>Delivering visually captivating and highly effective designs, I prioritize optimizing websites for seamless viewing across various devices and screen sizes. My focus is on creating layouts that are both consistent and user-friendly, ensuring an exceptional experience for every visitor.</p>
                 </div>
             </div>
 
             <div class="box" data-aos="zoom-in">
-                <div class="logo">
-                    <i class="fab fa-wordpress"></i>
-                </div>
                 <div class="contents">
+                    <div class="logo">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
                     <h3>WordPress Website</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, obcaecati?</p>
                 </div>
-            </div>
-        </div>
-    </section>
+            </div> -->
+    <!-- </div>
+    </section> -->
     <!-- services section ends -->
 
     <!-- education and experience section starts -->
