@@ -1,0 +1,536 @@
+
+:root{
+    --yellow:#c76356;
+    --black:#2c2e3c;
+    --white:#e2ddca;
+    --light-bg:#eee;
+    --border-bold:.5rem solid var(--yellow);
+    --border-light:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    color: var(--black);
+}
+
+*::selection{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--yellow);
+}
+
+html{
+    font-size:62.5%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    overflow:auto;
+    transition: .2x linear !important;
+}
+
+section{
+    margin-left: 30%;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    padding: 1px 16px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.heading{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading span{
+    text-transform: uppercase;
+    font-size: 6.5rem;
+    border-bottom: var(--border-bold);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: var(--border-light);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.btn i{
+    color: var(--white);
+}
+
+.btn:hover{
+    background-color:var(--white);
+    color:  var(--black);
+}
+
+
+/* new css style for nav  */
+.header ul.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: var(--white);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+ul.navbar li a{
+    display: block;
+    color: #000;
+    padding: 32px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+ul.navbar li a.active{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.home .image{
+    flex: 1 1 40rem;
+}
+
+.home .image img{
+    padding: 2rem;
+    border: var(--border-light);
+}
+
+.home img{
+    max-width: 500px;
+    height: auto;
+    width: auto;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding: 1rem;
+}
+
+.home .content .follow{
+    font-size: 4rem;
+    /* padding-top: 2rem; */
+}
+
+.home .content .follow a{
+    padding: 1rem;
+}
+
+.home .content h3 a:hover{
+    text-decoration: underline;
+}
+
+.home .content h3{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: .5rem;
+}
+
+.home .content span{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    border: var(--border-light);
+    background-color: var(--light-bg);
+    text-transform: capitalize;
+    margin: 2.5rem 0;  
+}
+
+.home .content p{
+    font-size: 3rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+
+.home .btn i{
+    color: var(--yellow);
+}
+
+.about .biography p{
+    margin: 2rem auto;
+    max-width: 70rem;
+    line-height: 2;
+    font-size: 2.5rem;
+}
+
+.about .bio{
+    margin-top: 1rem 0;
+}
+
+.about .bio h3{
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin: 1rem;
+    background-color: var(--light-bg);
+    border: var(--border-light);
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-transform:  capitalize;
+}
+
+.about .bio h3 span{
+    font-weight: lighter;
+}
+
+.about .skills h1{
+    margin-top: 3.5rem;
+}
+
+.about .skills ul{
+    list-style: none;
+}
+
+.about .skills ul li{
+    display: inline;
+    margin: 1.5rem;
+}
+
+.about .skills ul li img{
+    height: 150px;
+    padding: 1.5rem;
+}
+
+.project .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin: 3rem;
+}
+
+.project .box-container .box img{
+    height: 40rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .box-container .box .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--light-bg);
+}
+
+.project .box-container .box h3{
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    left: 0%;
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+.project .box-container .box span{
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    right: 0%;
+    font-size: 2rem;
+}
+
+.project .box-container .box:hover .overlay{
+    opacity: 90%;
+}
+
+
+.project .box-container .box ul li{
+    display: inline;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: var(--light-bg);
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.0;
+    align-items: flex-start;
+    margin: .5rem;
+}
+
+.services span{
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-bottom: var(--border-light);
+}
+
+.services .box-container .box{
+    padding:1rem 2rem;
+    margin: 1rem;
+}
+
+.services .box-container .box .logo{
+    padding-right: 2.5rem;
+}
+
+
+.services .box-container .box i{
+    font-size: 6rem;
+}
+
+.services .box-container .box h3{
+    margin: 1rem 0;
+    font-size: 3rem;
+    padding: 1rem;
+    text-transform: capitalize;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.services .box-container .box p{
+    line-height: 2;
+    font-size: 2rem;
+}
+
+.education_experience .edu-exp{
+    padding-top: 3rem;
+}
+
+.education_experience .edu-exp .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 3rem;
+}
+
+.education_experience .edu-exp .row .box-container{
+    flex: 1 1 40rem;
+}
+
+.education_experience .edu-exp .row .box-container .title{
+    padding: 1.5rem;
+    font-size: 3rem;
+    background-color:var(--yellow);
+}
+
+.education_experience .edu-exp .row .box-container .box{
+    text-align: left;
+    margin: 1.5rem 0;
+    background-color: var(--light-bg);
+    padding: 2rem;
+}
+
+.education_experience .edu-exp .row .box-container .box:hover {
+    box-shadow: 2px 2px 8px;
+}
+
+.education_experience .edu-exp .row .box-container span{
+    font-size: 2rem;
+}
+
+.education_experience .edu-exp .row .box-container .box h3{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.education_experience .edu-exp .row .box-container .box p{
+    line-height: 1.5;
+    font-size: 1.7rem;
+}
+
+.contact .contact_info p{
+    text-transform: none;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact .contact_info span{
+    font-size: 3rem;
+    text-transform: none;
+}
+
+.contact .contact_info strong{
+    text-transform: none;
+}
+
+
+.contact .box-container .box{
+    padding: 2rem;
+}
+
+.contact .box-container .box .fab{
+    font-size: 7rem;
+    padding-left: 3rem;
+}
+
+.contact form .btn{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.credit{
+    margin-left: 25%;
+    text-align: center;
+    background-color: var(--light-bg);
+    padding: 3rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+
+.credit span{
+    color: darkred;
+}
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+    .header ul.navbar{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .header ul.navbar li a{
+        float: left;
+        padding: 2.5rem;
+    }
+
+    section{
+        margin-left: 0;
+    }
+
+    .about .skills ul li img{
+        height: 100px;
+    }
+    .credit{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:790px){
+    html{
+        font-size: 50%;
+    }
+
+    .home img{
+        height: 500px;
+        width: auto;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .heading span{
+        font-size: 4.5rem;
+    }
+
+    .about .biography .bio h3{
+        font-size: 2rem;
+    }
+
+    .about .skills ul li img{
+        height: 100px;
+    }
+
+    .contact form .flex .box{
+        width: 100%;
+    }
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 40%;
+    }  
+
+    .header ul.navbar li a{
+        text-align: center;
+        float: none;
+    }
+
+    .home img{
+        max-width: 300px;
+        height: auto;
+        width: auto;
+    }
+    
+    .heading span{
+        font-size: 3.5rem;
+    }
+
+    .about .skills ul li img{
+        height: 70px;
+    }
+
+    .project .box-container {
+        margin: 2.5rem;
+    }
+}
+
+
+@media(max-width:350px){
+
+    html{
+        font-size: 35%;
+    }
+    
+    .home img{
+        height: 300px;
+        width: auto;
+    }
+
+    .about .skills ul li img{
+        height: 60px;
+    }
+
+    .services .box-container{
+        margin: 0;
+    }
+
+    .education_experience .edu-exp .row {
+        margin: 0;
+    }
+}
