@@ -36,7 +36,7 @@
 }
 
 html{
-    font-size:62.5%;
+    font-size:70%;
     overflow: auto;
     scroll-behavior: smooth;
 }
@@ -92,12 +92,12 @@ section{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 20%;
     background-color: var(--white);
     position: fixed;
     height: 100%;
     overflow: auto;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -144,7 +144,7 @@ ul.navbar li a.active{
 }
 
 .home .content{
-    flex: 1 1 40rem;
+    flex: 1 1 55rem;
     padding: 1rem;
 }
 
@@ -189,7 +189,7 @@ ul.navbar li a.active{
 
 .about .biography p{
     margin: 2rem auto;
-    max-width: 70rem;
+    /* max-width: 70rem; */
     line-height: 2;
     font-size: 2.5rem;
 }
@@ -408,7 +408,7 @@ ul.navbar li a.active{
 }
 
 .credit{
-    margin-left: 25%;
+    margin-left: 15%;
     text-align: center;
     background-color: var(--light-bg);
     padding: 3rem;
@@ -451,7 +451,7 @@ ul.navbar li a.active{
 
 @media (max-width:790px){
     html{
-        font-size: 50%;
+        font-size: 70%;
     }
 
     .home img{
@@ -483,7 +483,7 @@ ul.navbar li a.active{
 @media(max-width:450px){
 
     html{
-        font-size: 40%;
+        font-size: 50%;
     }  
 
     .header ul.navbar li a{
@@ -512,10 +512,6 @@ ul.navbar li a.active{
 
 
 @media(max-width:350px){
-
-    html{
-        font-size: 35%;
-    }
     
     .home img{
         height: 300px;
