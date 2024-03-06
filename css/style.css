@@ -36,7 +36,7 @@
 }
 
 html{
-    font-size:70%;
+    font-size:60%;
     overflow: auto;
     scroll-behavior: smooth;
 }
@@ -139,7 +139,7 @@ ul.navbar li a.active{
 }
 
 .home img{
-    max-width: 500px;
+    max-width: 450px;
     height: auto;
     width: auto;
 }
@@ -425,6 +425,9 @@ ul.navbar li a.active{
 /* media queries */
 
 @media (max-width:991px){
+    html{
+        font-size: 50%;
+    } 
 
     .header ul.navbar{
         width: 100%;
@@ -451,9 +454,6 @@ ul.navbar li a.active{
 }
 
 @media (max-width:790px){
-    html{
-        font-size: 70%;
-    }
 
     .home img{
         height: 500px;
@@ -463,9 +463,6 @@ ul.navbar li a.active{
 }
 
 @media(max-width:650px){
-    html{
-        font-size: 50%;
-    } 
 
     .heading span{
         font-size: 4.5rem;
