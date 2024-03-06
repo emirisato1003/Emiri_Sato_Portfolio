@@ -48,6 +48,7 @@ body{
 
 section{
     margin-left: 30%;
+    margin-right: 10%;
     margin-top: 5rem;
     margin-bottom: 10rem;
     padding: 1px 16px;
@@ -438,7 +439,8 @@ ul.navbar li a.active{
     }
 
     section{
-        margin-left: 0;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .about .skills ul li img{
@@ -462,6 +464,9 @@ ul.navbar li a.active{
 }
 
 @media(max-width:650px){
+    html{
+        font-size: 50%;
+    } 
 
     .heading span{
         font-size: 4.5rem;
@@ -480,11 +485,8 @@ ul.navbar li a.active{
     }
 }
 
-@media(max-width:450px){
-
-    html{
-        font-size: 50%;
-    }  
+/* 450px */
+@media(max-width:580px){ 
 
     .header ul.navbar li a{
         text-align: center;
