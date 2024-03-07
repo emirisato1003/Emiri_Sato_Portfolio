@@ -275,7 +275,7 @@ ul.navbar li a.active{
 
 .project .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2.5rem;
     align-items: flex-start;
     margin: 3rem;
