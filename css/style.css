@@ -190,7 +190,7 @@ ul.navbar li a.active{
 
 .services .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 2.0;
     align-items: flex-start;
     margin: .5rem;
@@ -206,10 +206,6 @@ ul.navbar li a.active{
     padding:1rem 2rem;
     margin: 1rem;
 }
-
-/* .services .box-container .box .logo{
-    padding-right: 3rem;
-} */
 
 .services .box-container .box i{
     font-size: 7rem;
@@ -472,10 +468,6 @@ ul.navbar li a.active{
         font-size: 2rem;
     }
 
-    .about .skills ul li img{
-        height: 100px;
-    }
-
     .contact form .flex .box{
         width: 100%;
     }
@@ -483,10 +475,6 @@ ul.navbar li a.active{
 
 /* 450px */
 @media(max-width:580px){
-    
-    html{
-        font-size: 40%;
-    }
 
     .header ul.navbar li a{
         text-align: center;
@@ -498,13 +486,10 @@ ul.navbar li a.active{
         height: auto;
         width: auto;
     }
-    
-    .heading span{
-        font-size: 3.5rem;
-    }
 
     .about .skills ul li img{
-        height: 70px;
+        height: 75px;
+        padding: 1rem;
     }
 
     .project .box-container {
@@ -513,18 +498,14 @@ ul.navbar li a.active{
 }
 
 
-@media(max-width:350px){
-    
+@media(max-width:350px){    
     .home img{
         height: 300px;
         width: auto;
     }
 
-    .about .skills ul li img{
-        height: 60px;
-    }
-
     .services .box-container{
+        display: block;
         margin: 0;
     }
 
