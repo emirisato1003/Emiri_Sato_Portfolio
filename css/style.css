@@ -497,6 +497,18 @@ ul.navbar li a.active{
     }
 }
 
+@media(max-width:450px){
+
+    .project .box-container .box .overlay{
+        opacity: 80%;
+    }
+
+    .project .box-container .box:hover .overlay{
+    opacity: 0%;
+    }
+
+}
+
 
 @media(max-width:350px){    
     .home img{
