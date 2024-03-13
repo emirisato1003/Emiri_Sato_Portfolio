@@ -147,6 +147,21 @@ h3{
     animation-duration: 1.5s;
 }
 
+.slide .next_page{
+    text-align: center;
+    padding: 2rem 0 0;
+}
+
+.slide .next_page a{
+    font-size: 2rem;
+    color: var(--yellow);
+}
+
+.slide .next_page a:hover{
+    text-decoration: underline;
+
+}
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
