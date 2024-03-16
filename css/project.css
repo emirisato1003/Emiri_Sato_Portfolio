@@ -152,6 +152,16 @@ h3{
     padding: 2rem 0 0;
 }
 
+.slide .next_page ul{
+    margin-top: 4rem;
+    list-style: none;
+}
+
+.slide .next_page ul li{
+    display: inline;
+    padding: 2rem;
+}
+
 .slide .next_page a{
     font-size: 2rem;
     color: var(--yellow);

@@ -21,10 +21,6 @@
     <!-- header starts -->
     <header class="header">
 
-        <!-- <div id="menu-btn" class="fas fa-bars"></div>
-
-        <a href="#home" class="logo">Portfolio.</a> -->
-
         <ul class="navbar">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="index.html#project">Project</a></li>
@@ -32,11 +28,6 @@
             <li><a href="index.html#contact">contact</a></li>
         </ul>
 
-        <!-- <div class="follow">
-            <a href="https://www.linkedin.com/in/emirisato/" class="fab fa-linkedin"></a>
-            <a href="https://github.com/emirisato1003" class="fab fa-github"></a>
-            <a href="http://www.youtube.com/@e.schannel1997" class="fab fa-youtube"></a>
-        </div> -->
     </header>
     <!-- header ends -->
 
@@ -56,38 +47,52 @@
         </div>
 
         <div class="used_skills">
-            <h3>Skills Utilized</h3>
-            <ul>
-                <li>HTML + CSS</li>
-                <li>PHP</li>
-                <li>Bootstrap</li>
-            </ul>
+            <div class="used_skills">
+                <h3>Skills Utilized</h3>
+                <div class="skills_container">
+                    <div class="box">HTML + CSS</div>
+                    <div class="box">PHP</div>
+                    <div class="box">MySQL</div>
+                    <div class="box">Bootstrap</div>
+                </div>
+            </div>
         </div>
 
     </section>
     <!-- project contents section ends -->
     <section class="slide" id="slide" style="text-align: unset; padding: 0;">
-        <!-- <h3 style="text-align: center;">Gallery</h3> -->
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-                <!-- <div class="numbertext">1 / 3</div> -->
-                <img src="img/nyt_project.png" style="width:100%">
-                <div class="text">NYT Article Home page</div>
+                <img src="img/blog_project_home.png" style="width:100%">
+                <div class="text">Travel Blog Home page</div>
             </div>
 
             <div class="mySlides fade">
-                <!-- <div class="numbertext">2 / 3</div> -->
-                <img src="img/nyt_project_img_2.png" style="width:100%">
-                <div class="text">Caption Two</div>
-            </div>
-
-            <div class="mySlides fade">
-                <!-- <div class="numbertext">3 / 3</div> -->
-                <img src="img/nyt_project_img_3.png" style="width:100%">
+                <img src="img/Blog_broject_home_coloumn.png" style="width:50%">
                 <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/blog_project_blogpage.png" style="width:100%">
+                <div class="text">Blog Contents page</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/blog_project_category_page.png" style="width:50%">
+                <div class="text">Category page</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/blog_project_tag_page.png" style="width:50%">
+                <div class="text">Tag page</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/blog_project_create_post_page.png" style="width:50%">
+                <div class="text">New Post page</div>
             </div>
 
             <!-- Next and previous buttons -->
@@ -101,8 +106,20 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
 
+        <div class="next_page">
+            <ul>
+                <li>
+                    <a href="project_3.html">&lt;Back</a>
+                </li>
+                <li>
+                    <a href="project_5.html">Next></a>
+                </li>
+            </ul>
         </div>
     </section>
 
