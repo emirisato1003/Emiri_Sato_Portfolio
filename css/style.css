@@ -407,6 +407,19 @@ ul.navbar li a.active{
     border-radius: 10px 10px 10px 10px;
 }
 
+.contact .back{
+    font-size: 2rem;
+    padding-top: 2.5rem;
+}
+
+.contact .back a{
+    color: var(--yellow);
+}
+
+.contact .back a:hover{
+    text-decoration: underline;
+}
+
 .credit{
     margin-left: 15%;
     text-align: center;
