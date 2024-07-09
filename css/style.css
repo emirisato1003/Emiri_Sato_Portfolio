@@ -89,7 +89,7 @@ section{
 
 
 /* new css style for nav  */
-.header ul.navbar{
+.header ul.nav-bar{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -102,19 +102,19 @@ section{
     text-transform: uppercase;
 }
 
-ul.navbar li a{
+ul.nav-bar li a{
     display: block;
     color: #000;
     padding: 32px 16px;
     text-decoration: none;
 }
 
-ul.navbar li a:hover{
+ul.nav-bar li a:hover{
     background-color: var(--black);
     color: var(--white);
 }
 
-ul.navbar li a.active{
+ul.nav-bar li a.active{
     background-color: var(--black);
     color: var(--white);
 }
@@ -442,13 +442,13 @@ ul.navbar li a.active{
         font-size: 50%;
     } 
 
-    .header ul.navbar{
+    .header ul.nav-bar{
         width: 100%;
         height: auto;
         position: relative;
     }
 
-    .header ul.navbar li a{
+    .header ul.nav-bar li a{
         float: left;
         padding: 2.5rem;
     }
@@ -493,7 +493,7 @@ ul.navbar li a.active{
 /* 450px */
 @media(max-width:580px){
 
-    .header ul.navbar li a{
+    .header ul.nav-bar li a{
         text-align: center;
         float: none;
     }
