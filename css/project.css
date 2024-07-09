@@ -19,9 +19,23 @@
     font-size: 3rem;
 }
 
+.project .content .app-link .link-btn{
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background-color: var(--yellow);
+    border: #2c2e3c .2rem solid;
+}
+
+.project .content .app-link .link-btn:hover{
+    box-shadow: 0 0 1rem 0 var(--black);
+}
+
+
 h3{
     font-size: 4rem;
-    margin: 7rem 0 2.5rem;
+    margin: 3.5rem 0 2.5rem;
     background-color: var(--white);
 }
 
@@ -146,6 +160,7 @@ h3{
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 
 .slide .next_page{
     text-align: center;
