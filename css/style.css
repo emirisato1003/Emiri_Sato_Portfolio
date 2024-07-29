@@ -401,6 +401,12 @@ ul.nav-bar li a.active{
 .contact .box-container .box .fab{
     font-size: 7rem;
     padding-left: 3rem;
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.contact .box-container .box a:hover{
+    text-decoration: underline;
 }
 
 .contact form .btn{
